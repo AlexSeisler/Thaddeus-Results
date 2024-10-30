@@ -1,13 +1,21 @@
 *{
     padding:0px;
     margin:0px;
+    box-sizing: border-box;
 }
 body{
     background-color:#97938a;
 }
-.header-top{
+.header{
     display:flex;
     flex-direction: column; 
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    background-color: #0e0e0c;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .tiny-icon{
     font-size:120%;
@@ -16,7 +24,7 @@ body{
     --ionicon-stroke-width:20px;
 }
 .header-text{
-    color:maroon;
+    color:#b24f63;
     font-size:25px;
 }
 p{
@@ -25,9 +33,13 @@ p{
 .top_header{
     display:flex;
     justify-content: space-between;
+    align-items: center;
     padding-left:20px;
     padding-right:20px;
-    
+    height: 120px;
+}
+#stevens-logo{
+    height: 100px;
 }
 .right_top{
     display:flex;
@@ -35,21 +47,16 @@ p{
 
     
 }
-.number{
+.header-contact-box{
     display:flex;
     align-items: center;
     gap:10px;
 
 }
-.scedule{
-    display:flex;
-    align-items: center;
-    gap:10px;
-}
 .circle1{
     height:40px;
     width:40px;
-    background-color: maroon;
+    background-color: #b24f63;
     border-radius: 25px;
     display:flex;
     justify-content: center;
@@ -61,7 +68,7 @@ p{
 .bottom_header{
     display:flex;
     justify-content: center;
-    background-color: maroon;
+    background-color: rgb(255, 255, 255);
     padding:20px;
 }
 .navigation{
@@ -72,7 +79,7 @@ p{
     
 }
 .li{
-    color:white;
+    color:#861E42
 }
 .tagline{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgb(0,0,0,0.7)), url(images/Thad.jfif);
