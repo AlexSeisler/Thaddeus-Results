@@ -1,3 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 body{
-    background-color: red;
+   
+    display: flex;
+}
+
+/* on smaller screen text size */
+@media only screen and (max-width: 300px){
+    body {font-size: 11px}
+}
+
+
+.left{
+    color: white;
+    width: 320px;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(71, 53, 58);
+    padding-right: 9px;
+}
+
+.name{
+    font-size: 200%;
+    margin-top: 12px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.active {
+    background-color: #6e4d4d;
+  }
+
+.slideShowHolder{
+   
+    box-shadow: 0px 0px 15px #888888;
+    width: 100%;
+    height: fit-content;
+    margin: 23px 0px 23px 0px;
+}
+
+
+/* Slide show pics */
+.myslide{
+    display: none;
+    opacity: 0;
+    animation: fade 1s ease-in-out;
+}
+
+/* fading animation */
+.fade{
+    animation-name: fade;
+
+}
+
+@keyframes fade{
+    from {opacity: 0.4;}
+    to { opacity: 1;}
+}
+
+/*  On smaller screens, decrease text size */
+@media only screen and (max-width:300px){
+    body {font-size: 11px}
+}
+
+.contact{
+    font-size: 100%;
+    font-weight: bolder;
+
+    display: flex;
+    flex-direction: column;
+   padding-left: 23px;
+}
+
+.contactNumber{
+    display: flex;
+   
+}
+
+.contactEmail{
+   display: flex;
+  
+}
+
+.line{
+    width: 50%;
+    margin: 6px auto 6px auto;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.skill{
+    display: flex;
+}
+
+ion-icon{
+    margin: 3px 12px 0px 19px;
+    width: 23px;
+}
+
+.center{
+   
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.main-image{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, .5)), 
+    url('../images/welder.webp');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 63px;
+    font-size: 200%;
+    background-attachment: fixed;
+}
+
+.profile .line{
+    background-color: black;
+    
+}
+
+.profile{
+    text-align: center;
+}
+
+.options{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.option{
+    width: 500px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    margin: 17px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px #888888;
+}
+
+.option ion-icon{
+    border: black 3px solid;
+    height: 23px;
+    background-color: rgb(255, 255, 255);
+    padding: 13px;
+    border-radius: 26px;
+    margin-left: -12px;
+   
+}
+
+.option p{
+    text-align: center;
+    padding: 3px;
+    height: fit-content;
+    background-color: #6e4d65;
+    border-radius: 23px;
+    color: white;
+}
+
+.option p:hover{
+    cursor: pointer;
+    background-color: #41293b;
+}
+
+.services{
+    font-size: 300%;
+    margin: 23px 0px 13px 0px;
+    background-color: aliceblue;
+    padding: 23px 0px 23px 0px;
+}
+
+.article-display{
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.article-img1{
+    width: 50%;
+    background-image: url('../images/weld_clipart.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.article-display p{
+    width: 43%;
+    height: fit-content;
+    padding: 7px;
+    text-align: justify;
+    margin: auto;
+    font-size: 130%;
+    border-radius: 12px;
+    overflow: hidden;
+
+
+    
 }
