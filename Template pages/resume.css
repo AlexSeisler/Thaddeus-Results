@@ -1,15 +1,72 @@
-body{
-    background-color: rgb(245, 223, 223);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
-header{
+body{
+    background-color: rgb(245, 223, 223);
     display: flex;
 }
 
-.headerImage{
-    min-width:  30%;
-    height: 320px;
-    background-color: rgb(95, 93, 93); 
-    margin: 12px 12px 12px 23px;
+/* on smaller screen text size */
+@media only screen and (max-width: 300px){
+    body {font-size: 11px}
+}
+
+
+.left{
+    border: red 1px solid;
+    width: 30%;
+    height: 100vh;
+
+}
+
+.active {
+    background-color: #6e4d4d;
+  }
+
+.slideShowHolder{
+    width: 100%;
+    height: fit-content;
+    border: black 1px solid;
+}
+
+
+/* Slide show pics */
+.myslide{
+    display: none;
+    opacity: 0;
+    animation: fade 1s ease-in-out;
+}
+
+/* fading animation */
+.fade{
+    animation-name: fade;
+
+}
+
+@keyframes fade{
+    from {opacity: 0.4;}
+    to { opacity: 1;}
+}
+
+/*  On smaller screens, decrease text size */
+@media only screen and (max-width:300px){
+    body {font-size: 11px}
+}
+
+.center{
+    border: blue 1px solid;
+    width:60%;
+    height: 100vh;
+}
+
+.right{
+    border: green 1px solid;
+    width: 10%;
+    height: 100%;
+   
 }
 
