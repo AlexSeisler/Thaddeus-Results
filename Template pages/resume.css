@@ -1,3 +1,15 @@
 body{
-    background-color: red;
+    background-color: rgb(245, 223, 223);
 }
+
+header{
+    display: flex;
+}
+
+.headerImage{
+    min-width:  30%;
+    height: 320px;
+    background-color: rgb(95, 93, 93); 
+    margin: 12px 12px 12px 23px;
+}
+
