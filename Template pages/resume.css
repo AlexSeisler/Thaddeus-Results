@@ -18,7 +18,7 @@ body{
 
 .left{
     color: white;
-    width: 320px;
+    width: 240px;
     height: 100vh;
     text-align: center;
     background-color: rgb(71, 53, 58);
@@ -113,7 +113,7 @@ ion-icon{
 }
 
 .main-image{
-    height: 500px;
+    height: 520px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, .5)), 
     url('../images/welder.webp');
     background-position: center;
@@ -123,6 +123,7 @@ ion-icon{
     padding-top: 63px;
     font-size: 200%;
     background-attachment: fixed;
+    background-position-y: 50%;
 }
 
 .profile .line{
@@ -132,13 +133,17 @@ ion-icon{
 
 .profile{
     text-align: center;
+    margin-bottom: 53px;
 }
 
 .options{
     display: flex;
     margin: auto;
     justify-content: center;
+    flex: 0 1 300px;
+    margin-top: -83px;
 }
+
 
 .option{
     width: 500px;
@@ -147,6 +152,7 @@ ion-icon{
     margin: 17px;
     border-radius: 12px;
     box-shadow: 0px 0px 15px #888888;
+    font-size: 120%;
 }
 
 .option ion-icon{
@@ -156,8 +162,9 @@ ion-icon{
     padding: 13px;
     border-radius: 26px;
     margin-left: -12px;
-   
+    float: left;
 }
+
 
 .option p{
     text-align: center;
@@ -166,6 +173,12 @@ ion-icon{
     background-color: #6e4d65;
     border-radius: 23px;
     color: white;
+}
+
+.option h2{
+    padding-top: 40px;
+    padding-right: 40px;
+    
 }
 
 .option p:hover{
@@ -204,7 +217,76 @@ ion-icon{
     font-size: 130%;
     border-radius: 12px;
     overflow: hidden;
+}
 
+.articleBanner{
+    width: 100%;
+    height: 420px;
+    background-image: url('../images/welding.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    font-size: 240%;
+    text-align: center;
+   
+}
 
+.articleBanner h1{
+    padding-top: 153px;
+}
+
+.galleryHolder{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    background-color: azure;
+    margin: 23px 0px 23px 0px;
+}
+
+.gal{
+    border: rgb(108, 62, 62) 1px solid;
+    width: 20%;
+   transition: width 1s;
     
+}
+
+.gal:hover{
+    width: 30%;
+}
+
+.gal1{
+    background-image: url('../images/weld_gal1.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.gal2{
+    background-image: url('../images/weld_gal2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gal3{
+    background-image: url('../images/weld_gal3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gal4{
+    background-image: url('../images/weld_gal4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gal5{
+    background-image: url('../images/weld_gal5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
