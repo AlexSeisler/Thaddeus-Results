@@ -41,6 +41,25 @@ p{
 #stevens-logo{
     height: 100px;
 }
+.left_top{
+    display: flex;
+    align-items: center;
+    gap:25px;
+}
+#header-title{
+    text-transform: uppercase;
+    font-family: 'Ubuntu';
+    font-size: 5vh;
+    color: rgb(226, 226, 226);
+}
+#header-title:after{
+    display:block;
+    height:2px;
+    width:100px;
+    margin: 5px 0;
+    background-color: #cf6076;
+    content:" ";
+}
 .right_top{
     display:flex;
     gap:25px;
@@ -176,6 +195,9 @@ h2:after{
     margin: 10px auto;
     background-color: #cf6076;
     content:" ";
+}
+.card .info{
+    letter-spacing: 3px;
 }
 .major{
     height:300px;
@@ -451,13 +473,20 @@ h2:after{
     flex-direction:column;
     text-align: center;
     justify-content: center;
-    height:650px;
+    min-height: max-content;
+}
+.testimonials{
+    display:flex;
+    gap:25px;
+    justify-content: center;
+    margin: 40px 0 ;
 }
 .header1{
     color:ghostwhite;
     font-weight:10;
     font-family:"Lato";
     font-size:40px;
+    margin: 40px 0;
 }
 .header1:after{
     display:block;
@@ -479,11 +508,6 @@ h2:after{
     font-family:"Lato";
     font-weight:10;
     text-align: left;
-}
-.testimonials{
-    display:flex;
-    gap:25px;
-    justify-content: center;
 }
 .profile3{
     display:flex;
@@ -508,12 +532,21 @@ h2:after{
     display:block;
     line-height:5px;
 }
+.prices{
+    display:flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+    padding:30px;
+    height: 70vh;
+    min-height: max-content;
+}
 .header2{
     color:black;
-    font-family: "Lato";
+    font-family: "Ubuntu";
     font-weight:200;
-    font-size:35px;
+    font-size:280%;
     text-align: center;
+    letter-spacing: 10px;
 }
 .header2:after{
     display:block;
@@ -524,13 +557,6 @@ h2:after{
     margin: auto;
     margin-top:10px;
     margin-bottom:25px;
-}
-.prices{
-    display:flex;
-    flex-direction: column;
-    background-color: #F4F4F4;
-    padding:30px;
-    
 }
 .optionsD{
     display:flex;
@@ -545,6 +571,7 @@ h2:after{
     width:400px;
     height:430px;
     box-shadow:0 2px 2x #cac5c5;
+    text-align: center;
 }
 
 .option8-fixed {
@@ -575,6 +602,7 @@ h2:after{
     color: #555;
     font-size: 16px;
     font-weight: bold;
+    font-family: 'Ubuntu';
     background-color: rgba(255, 255, 255, 0.8);
     padding: 5px 10px;
     border-radius: 4px;
@@ -586,7 +614,9 @@ h2:after{
     display: block;
 }
 
-
+.option8 .title5{
+    color: maroon;
+}
 
 
 
@@ -603,7 +633,7 @@ h2:after{
 .case7{
     font-size:28px;
     font-weight:200;
-    font-family:"Lato";
+    font-family:"Ubuntu";
     display:flex;
     align-items: center;
     gap:15px;
@@ -613,7 +643,7 @@ h2:after{
     font-size:250%;
     font-weight:100;
     margin:0px;
-    font-family: "Lato";
+    font-family: "Ubuntu";
     color:maroon;
 }
 .month{
@@ -622,15 +652,17 @@ h2:after{
     color:maroon;
 }
 .chance1{
-    font-size:80%;
+    font-size:2vh;
     margin:10px;
     color:maroon;
+    font-family: "Ubuntu";
+    font-weight: lighter;
     
 }
 .title5{
     font-size:25px;
     font-weight:200;
-    font-family: "Lato";
+    font-family: "Ubuntu";
     margin:15px;
 }
 .signUp{
@@ -640,7 +672,7 @@ h2:after{
     outline:maroon solid 2px;
     border:none;
     font-size:20px;
-    font-family:"Lato";
+    font-family:"Ubuntu";
     font-weight:100;
     color:maroon;
     background-color:white;
@@ -656,12 +688,12 @@ h2:after{
     outline:maroon solid 2px;
     border:none;
     font-size:20px;
-    font-family:"Lato";
+    font-family:"Ubuntu";
     font-weight:100;
     color:maroon;
     background-color:white;
 }
-.but{
+.button{
     text-align: center;
 }
 .ion-ok{
@@ -685,6 +717,7 @@ h2:after{
 .footer-content {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
@@ -692,28 +725,40 @@ h2:after{
 .footer-logo h2 {
     margin: 0;
 }
-
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
 .footer-links, .footer-social {
-    margin: 20px;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .footer-links ul, .footer-social ul {
     list-style: none; /* Remove bullet points */
+    display: flex;
+    justify-content: center;
     padding: 0;
 }
 
 .footer-links li, .footer-social li {
-    margin: 10px 0;
+    margin: 10px 20px;
 }
 
 .footer-links a, .footer-social a {
     color: #fff; /* Link color */
     text-decoration: none; /* Remove underline */
-    transition: color 0.3s;
+    font-size: 100%;
+    transition: color 0.3s, font-size 0.3s;
 }
 
 .footer-links a:hover, .footer-social a:hover {
     color: #ffa500; /* Change color on hover */
+    font-size: 110%;
 }
 
 .footer-bottom {
