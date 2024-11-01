@@ -23,7 +23,7 @@
                     <div class="circle1">
                         <ion-icon class="tiny-icon" name="call"></ion-icon>
                     </div>
-                    <p class="header-text">(484) 769-4650</p>
+                    <button onclick="initiateCall()" class="header-text">(484) 769-4650</button>
                 </div>
                 <div class="header-contact-box">
                     <div class="circle1">
@@ -36,20 +36,19 @@
         <div class="bottom_header">
             <ul class = "navigation">
                 <a class="li" href="#"><li>Home</li></a>
-                <a class="li" href="#"><li>How it Works</li></a>
-                <a class="li" href="#"><li>Services</li></a>
-                <a class="li" href="#"><li>Sign Up</li></a>
+                <a class="li" href="#transition-gradient"><li>How it Works</li></a>
+                <a class="li" href="#service"><li>Services</li></a>
                 <a class="li" href="#"><li>Contact</li></a>
             </ul>
         </div>
     </div>
-    <button class="fixed-button">Call (484) 769-4650</button>
+    <button onclick="initiateCall()" class="fixed-button">Call (484) 769-4650</button>
     <div class="tagline">
         <h1 id="tag">Be your own boss <br> Make it happen, whatever it takes</h1>
     </div>
     <div class="popup1">
         <div class="popup-header">
-            <h2>Welcome to Our Website!</h2>
+            <h2 id="home">Welcome to Our Website!</h2>
             <span class="close-btn" onclick="closePopup()">&times;</span>
         </div>
         <div class="popup-content">
@@ -184,7 +183,7 @@
                     <p class="name">Spencer Harper</p>
                 </div>
             </div>
-            <div class="test3">
+            <div id="service" class="test3">
                 <p class="innerText">As a principal, I am always on the lookout for resources that will benefit our students' future careers. The websites provided by Stevens Results gives our students the means to establish a professional digital footprint, which is essential in today’s competitive job market. I highly recommend this service to any student looking to stand out and advance their career readiness.</p>
                 <div class="profile3">
                     <img src="https://media.licdn.com/dms/image/v2/D4E03AQHkMig416ikiA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1710352872261?e=1733961600&v=beta&t=F4BP1P3J1ad7zicqGiNAGlmKOxNZFxHk_NNQETFi5vo" alt="person" class="pic">
@@ -322,19 +321,17 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#transition-gradient">About Us</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-social">
                 <h4>Follow Us</h4>
                 <ul>
-                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61567530567674" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/thaddeusstevenscollege/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/stevens-results/?viewAsMember=true" target="_blank">LinkedIn</a></li>
                 </ul>
             </div>
         </div>

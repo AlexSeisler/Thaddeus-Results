@@ -26,6 +26,8 @@ body{
 .header-text{
     color:#b24f63;
     font-size:25px;
+    background-color:black;
+    cursor:pointer;
 }
 p{
     color:white;
