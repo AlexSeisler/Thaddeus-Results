@@ -30,6 +30,63 @@ body{
     }
 }
 
+.popup1 {
+    display: block; /* Show the popup */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height:max-content;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 5px;
+    }
+    .form{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+
+    }
+    .popup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .close-btn {
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .popup-content {
+        margin-top: 10px;
+    }
+
+@media (max-width: 600px){
+    .popup1{
+        width: 80%;
+        overflow: hidden;
+    }
+    .close-btn{
+        scale: 200%;
+    }
+    .form{
+        flex-direction: column;
+    }
+    #youtube-video{
+        height: 40vh;
+    }
+    #microsoft-form{
+        height: 20vh;
+
+    }
+
+}
 
 /* 600px 768px 992px 1200px*/
 /*top of page*/
@@ -555,6 +612,7 @@ body{
                 font-weight: lighter;
                 
             }
+/* sign up button*/
 .signUp{
     height:40px;
     width:180px;
@@ -595,7 +653,7 @@ body{
     font-size:23px;
 }
 
-
+/*footer*/
 .site-footer {
     background-color: #333; /* Dark background */
     color: #fff; /* Light text color */
@@ -661,54 +719,9 @@ body{
     margin: 0;
     font-size: 14px;
 }
-.form{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:50px;
-
-}
 
 
-.popup1 {
-    display: block; /* Show the popup */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height:600px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    padding: 20px;
-    border-radius: 5px;
-}
 
-@media (max-width: 600px){
-    .popup1{
-        width: 80%;
-        overflow: hidden;
-    }
-    .close-btn{
-        scale: 200%;
-    }
-}
-.popup-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.close-btn {
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.popup-content {
-    margin-top: 10px;
-}
 
 /* Overlay styles */
 .overlay {
