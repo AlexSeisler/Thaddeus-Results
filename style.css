@@ -67,7 +67,7 @@ body{
         margin-top: 10px;
     }
 
-@media (max-width: 600px){
+@media (max-width: 768px){
     .popup1{
         width: 80%;
         overflow: hidden;
@@ -87,6 +87,28 @@ body{
     }
 
 }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .popup1{
+        width: 80%;
+        overflow: hidden;
+    }
+    .close-btn{
+        scale: 200%;
+    }
+    .form{
+        flex-direction: column;
+    }
+    #youtube-video{
+        height: 40vh;
+    }
+    #microsoft-form{
+        height: 20vh;
+
+    }
+
+}
+
 
 /* 600px 768px 992px 1200px*/
 /*top of page*/
@@ -183,6 +205,8 @@ body{
     .navigation a:hover, .navigation a:active{
         color: #cf6076;
     }
+@media only screen and (max-width: 600px){
+}
 .tagline{
     background-image:  linear-gradient(rgba(0,0,0,0.7), rgb(0,0,0,0.7)), url(images/Thad.jfif);
     background-size:cover;
