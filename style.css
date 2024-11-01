@@ -106,9 +106,6 @@ body{
         justify-content: center;
         align-items:center;
     }
-    .li{
-        text-decoration: none;
-    }
     .bottom_header{
         display:flex;
         justify-content: center;
@@ -122,10 +119,13 @@ body{
         font-size:25px;
         
     }
-    .li{
-        color:#861E42
+    .navigation .li{
+        color:#861E42;
+        text-decoration:none;
     }
-
+    .navigation a:hover, .navigation a:active{
+        color: #cf6076;
+    }
 .tagline{
     background-image:  linear-gradient(rgba(0,0,0,0.7), rgb(0,0,0,0.7)), url(images/Thad.jfif);
     background-size:cover;
