@@ -23,7 +23,12 @@ body{
     font-family: "Ubuntu";
     z-index: 1;
 }
-
+@media only screen and (max-width: 768px){
+    .fixed-button{
+        bottom: 40px;
+        left: calc(50% - 125px);/*center of screen*/
+    }
+}
 
 
 /* 600px 768px 992px 1200px*/
