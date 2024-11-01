@@ -23,6 +23,7 @@ body{
     text-align: center;
     background-color: rgb(71, 53, 58);
     padding-right: 9px;
+    justify-content: space-evenly;
 }
 
 .name{
@@ -42,14 +43,17 @@ body{
     width: 100%;
     height: fit-content;
     margin: 23px 0px 23px 0px;
+    transition: height 0.5s;
 }
 
 
 /* Slide show pics */
 .myslide{
+    
     display: none;
     opacity: 0;
     animation: fade 1s ease-in-out;
+    
 }
 
 /* fading animation */
@@ -71,7 +75,6 @@ body{
 .contact{
     font-size: 100%;
     font-weight: bolder;
-
     display: flex;
     flex-direction: column;
    padding-left: 23px;
@@ -241,11 +244,11 @@ ion-icon{
     height: 360px;
     display: flex;
     background-color: azure;
-    margin: 23px 0px 23px 0px;
+    margin: 0px 0px 23px 0px;
 }
 
 .gal{
-    border: rgb(108, 62, 62) 1px solid;
+    /* border: rgb(108, 62, 62) 1px solid; */
     width: 20%;
    transition: width 1s;
     

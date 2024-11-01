@@ -5,6 +5,7 @@
 }
 body{
     background-color:rgb(14, 14, 12);
+   
 }
 .header{
     display:flex;
@@ -101,7 +102,7 @@ p{
     color:#861E42
 }
 .tagline{
-    background-image:  linear-gradient(rgba(0,0,0,0.7), rgb(0,0,0,0.7)), url(images/Thad.jfif);
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgb(0,0,0,0.7)), url('images/Thad.jfif');
     background-size:cover;
     background-attachment: fixed;
     width: 100%;
