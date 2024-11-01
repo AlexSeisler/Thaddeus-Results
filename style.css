@@ -6,6 +6,7 @@
 body{
     background-color:rgb(14, 14, 12);
 }
+/*top of page*/
 .header{
     display:flex;
     flex-direction: column; 
@@ -26,9 +27,6 @@ body{
 .header-text{
     color:#b24f63;
     font-size:25px;
-}
-p{
-    color:white;
 }
 .top_header{
     display:flex;
@@ -63,8 +61,6 @@ p{
 .right_top{
     display:flex;
     gap:25px;
-
-    
 }
 .header-contact-box{
     display:flex;
@@ -133,6 +129,7 @@ p{
     width:250px;
     font-size:20px;
     font-family: "Ubuntu";
+    z-index: 1;
 }
 #section1Text{
     color:#cf6076;
@@ -181,7 +178,7 @@ p{
     color:#cf6076;
     font-family: 'Ubuntu';
 }
-#general-templates{
+.section-header{
     color: #cf6076;
     font-family: 'Ubuntu';
     text-align: center;
@@ -528,6 +525,8 @@ h2:after{
 }
 .innerText:before{
     content: "\201C";
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
     font-size:500%;
     display:block;
     line-height:5px;
@@ -794,6 +793,15 @@ h2:after{
     border-radius: 5px;
 }
 
+@media (max-width: 600px){
+    .popup1{
+        width: 80%;
+        overflow: hidden;
+    }
+    .close-btn{
+        scale: 200%;
+    }
+}
 .popup-header {
     display: flex;
     justify-content: space-between;
