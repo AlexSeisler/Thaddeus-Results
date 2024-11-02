@@ -5,6 +5,7 @@
 }
 body{
     background-color:rgb(14, 14, 12);
+   
 }
 
 .fixed-button {
@@ -208,7 +209,7 @@ body{
 @media only screen and (max-width: 600px){
 }
 .tagline{
-    background-image:  linear-gradient(rgba(0,0,0,0.7), rgb(0,0,0,0.7)), url(images/Thad.jfif);
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgb(0,0,0,0.7)), url('images/Thad.jfif');
     background-size:cover;
     background-attachment: fixed;
     width: 100%;
