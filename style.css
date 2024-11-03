@@ -7,7 +7,10 @@ body{
     background-color:rgb(14, 14, 12);
    
 }
-
+button{
+    border-style: none;
+    /*temp fix, buttons had a wierd border style*/
+}
 .fixed-button {
     position: fixed;
     bottom: 40px; /* Adjust this value to position the button vertically */
@@ -206,7 +209,22 @@ body{
     .navigation a:hover, .navigation a:active{
         color: #cf6076;
     }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
+    .header-text{
+        display: none;
+    }
+    #header-title{
+        font-size: 3vh;
+    }
+    .navigation .li{
+        font-size: 4vw;
+    }
+    .top_header{
+        height: 100px;
+    }
+    #stevens-logo{
+        height: 80px;
+    }
 }
 .tagline{
     background-image:  linear-gradient(rgba(0,0,0,0.7), rgb(0,0,0,0.7)), url('images/Thad.jfif');
@@ -230,7 +248,32 @@ body{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 230%;
         line-height: 200%;
+        width: 80%;
     }
+@media only screen and (max-width: 600px){
+    #tag{
+        font-size: 4vh;
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #tag{
+        font-size: 5vh;
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px){
+    #tag{
+        font-size: 6vh;
+    }
+}
+@media only screen and (max-width: 992px){
+    #tag{
+        text-align: center;
+        align-self: center;
+        margin-left: 0;
+    }
+}
 .main-content{
     background-color: rgb(14,14,12);
     height: max-content;
