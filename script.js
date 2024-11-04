@@ -5,20 +5,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to show the popup
     function showPopup() 
     {
-        // Show the close button after 10 seconds
+        // Show the close button after time
         setTimeout(() => {
             document.querySelector('.close-btn').style.display = 'block';
-        }, 1000); // 10000 ms = 10 seconds
+        }, 10000); 
 
-        // Show the form after 30 seconds
         setTimeout(() => {
-            document.getElementById('microsoft-form').style.display = 'block';
+            document.getElementById('microsoft-form').style.height = "480px";
+            document.getElementById('microsoft-form').style.width = "640px";
             
-        }, 15000); // 30000 ms = 30 seconds
+        }, 3000); 
     }
 
-        // Function to close the popup
-    
     showPopup();
 
 });

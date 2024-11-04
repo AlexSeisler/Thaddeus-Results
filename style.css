@@ -70,7 +70,9 @@ button{
     .popup-content {
         margin-top: 10px;
     }
-
+    .microsoft-form{
+        transition: all 1.0s ease-in-out;
+    }
 @media (max-width: 768px){
     .popup1{
         width: 80%;
