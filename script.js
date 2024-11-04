@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show the close button after time
         setTimeout(() => {
             document.querySelector('.close-btn').style.display = 'block';
-        }, 10000); 
+        }, 5000); 
 
         setTimeout(() => {
             document.getElementById('microsoft-form').style.height = "480px";
             document.getElementById('microsoft-form').style.width = "640px";
             
-        }, 3000); 
+        }, 1000); 
     }
 
     showPopup();
