@@ -10,25 +10,59 @@ body{
     display: flex;
 }
 
+.mobileStats{
+    display: none;
+    display: flex;
+    float: right;
+    position: absolute;
+    color: whitesmoke;
+    margin-left: 160px;
+    margin-top: 68px;
+}
+
+.mobileStats table{
+    display: none;
+    color:white;
+    text-align: left;
+
+}
+
+.profile-stats{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Disable fixed background on small screens */
+@media screen and (max-width: 768px) {
+    .main-image {
+        background-attachment: scroll;
+    }
+}
+
 /* on smaller screen text size */
 @media only screen and (max-width: 300px){
     body {font-size: 11px}
 }
 
+@media screen and (min-width: 500px){
+    .left{
+        width: 120px;
+        background-color: red;
+    }
+}
 
 .left{
     color: white;
     width: 240px;
     height: 100vh;
     text-align: center;
-    background-color: rgb(71, 53, 58);
+    background-color: rgb(14, 14,12);
     padding-right: 9px;
-    justify-content: space-evenly;
 }
 
 .name{
     font-size: 200%;
-    margin-top: 12px;
+    margin-top: 22px;
     text-align: center;
     font-weight: bolder;
 }
@@ -37,15 +71,12 @@ body{
     background-color: #6e4d4d;
   }
 
-.slideShowHolder{
-   
-    border: 1px white solid;
+.slideShowHolder{ 
+    border: 1px rgb(83, 58, 58) solid;
     width: 100%;
     height: fit-content;
-    margin: 23px 0px 23px 0px;
-   
+    margin: 3px auto  23px auto; 
 }
-
 
 /* Slide show pics */
 .myslide{
@@ -55,10 +86,7 @@ body{
     
 }
 
-
-
 .myslide img{
-    
     width: 100%;
     height: 200px;
 }
@@ -66,7 +94,6 @@ body{
 /* fading animation */
 .fade{
     animation-name: fade;
-
 }
 
 @keyframes fade{
@@ -79,23 +106,25 @@ body{
     body {font-size: 11px}
 }
 
-.contact{
-    font-size: 100%;
-    font-weight: bolder;
+.left-footer{
     display: flex;
     flex-direction: column;
-   padding-left: 23px;
+}
+.contact{
+    margin-top: 13px;
+    color: white;
+    font-size: 100%;
+    font-weight: bolder;
+    width: 100%;
+    height: 150px;
 }
 
-.contactNumber{
-    display: flex;
+.contact table{
+    text-align: left;
+    color: white;
    
 }
 
-.contactEmail{
-   display: flex;
-  
-}
 
 .line{
     width: 50%;
@@ -104,24 +133,20 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-
-
-.skill{
-    display: flex;
-}
-
 ion-icon{
-    margin: 3px 12px 0px 19px;
+  
     width: 23px;
 }
 
 .logo{
     background-image: url('../images/THADDEUS_STEVENS_LOGO_background.webp');
     width: 100%;
-    height: 300px;
+    height: 180px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    margin: auto;
+    
 }
 
 .center{
@@ -189,7 +214,7 @@ ion-icon{
     text-align: center;
     padding: 3px;
     height: fit-content;
-    background-color: #6e4d65;
+    background-color: #b24f63;
     border-radius: 23px;
     color: white;
 }
@@ -208,8 +233,9 @@ ion-icon{
 .services{
     font-size: 300%;
     margin: 23px 0px 13px 0px;
-    background-color: aliceblue;
+    background-color: #a47f86;
     padding: 23px 0px 23px 0px;
+    color: white;
 }
 
 .article-display{
@@ -259,7 +285,6 @@ ion-icon{
     width: 100%;
     height: 360px;
     display: flex;
-    background-color: azure;
     margin: 0px 0px 23px 0px;
 }
 
@@ -308,4 +333,93 @@ ion-icon{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* Media query for screens 500px or smaller */
+@media screen and (max-width: 450px) {
+  
+    .mobileStats table{
+        display: flex;
+    }
+
+    body{
+        flex-direction: column;
+       
+    }
+  /* Make the left panel narrower */
+    .left {
+        width: 100%;
+        flex-direction: row;
+        height: 160;
+    }
+
+    .line{
+        display: none;
+    }
+
+   .name{
+    text-align: left;
+    margin-top: 3px;
+   }
+
+    .slideShowHolder{ 
+        width: 120px;
+        margin-top: -1px; 
+        margin-left: 12px;
+        border-color: black;
+    }
+
+    .myslide img{
+        width: 120;
+        height: 120px;
+        margin-left: 12px;
+    }
+
+    .left-footer{
+      display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+ 
+    /* Center panel takes up remaining width */
+    .center {
+        width: 100%;
+    }
+
+    /* Reduce font size for the main-image text */
+    .main-image {
+        font-size: 1.5rem;
+        height: 300px; /* Adjust height to fit better on smaller screens */
+    }
+
+    /* Adjust option boxes to be smaller and stack vertically */
+    .options {
+        margin-top: -26px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .article-display p{
+        font-size: 100%;
+    }
+
+    /* Reduce size of gallery images */
+    .gal {
+        width: 100%; /* Make each gallery item full-width */
+        height: 150px; /* Adjust height for smaller screens */
+        transition: 0 0;
+    }
+
+    .gal:hover{
+        width: 100%;
+    }
 }

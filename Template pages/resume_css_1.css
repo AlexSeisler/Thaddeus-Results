@@ -1,0 +1,272 @@
+/* Global styles and variables */
+:root {
+    --main-bg-color: rgb(14, 14, 12);
+    --active-bg-color: #6e4d4d;
+    --text-color-white: #ffffff;
+    --font-size-large: 2rem;
+}
+
+/* Reset and box-sizing for consistent layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body layout and base font size */
+body {
+    display: flex;
+    font-size: 1rem;
+}
+
+/* Font size adjustment for very small screens */
+@media only screen and (max-width: 300px) {
+    body {
+        font-size: 0.6875rem; /* 11px equivalent */
+    }
+}
+
+/* Sidebar styles */
+.left {
+    color: var(--text-color-white);
+    width: 240px;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--main-bg-color);
+    padding-right: 9px;
+    justify-content: space-evenly;
+}
+
+/* Logo area */
+.logo {
+    background-image: url('../images/THADDEUS_STEVENS_LOGO_background.webp');
+    width: 100%;
+    height: 180px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+/* Name header */
+.name {
+    font-size: var(--font-size-large);
+    margin-top: 22px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Active link or item */
+.active {
+    background-color: var(--active-bg-color);
+}
+
+/* Slideshow container */
+.slideShowHolder {
+    border: 1px solid rgb(83, 58, 58);
+    width: 100%;
+    height: fit-content;
+    margin: 3px auto 23px auto;
+}
+
+/* Slideshow images */
+.myslide {
+    display: none;
+    opacity: 0;
+    animation: fade 1s ease-in-out;
+    will-change: opacity;
+}
+
+.myslide img {
+    width: 100%;
+    height: 200px;
+}
+
+/* Fade animation */
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Footer styles */
+.left-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact area */
+.contact {
+    margin-top: 13px;
+    color: var(--text-color-white);
+    font-size: 1rem;
+    font-weight: bolder;
+    width: 100%;
+    height: 150px;
+}
+
+.contact table {
+    text-align: left;
+    color: var(--text-color-white);
+}
+
+/* Divider line */
+.line {
+    width: 50%;
+    margin: 6px auto;
+    height: 2px;
+    background-color: var(--text-color-white);
+}
+
+/* Icon size adjustment */
+ion-icon {
+    width: 23px;
+}
+
+/* Center content container */
+.center {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* Main background image with gradient overlay */
+.main-image {
+    height: 520px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/welder.webp');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--text-color-white);
+    text-align: center;
+    padding-top: 63px;
+    font-size: var(--font-size-large);
+}
+
+/* Disable fixed background on small screens */
+@media screen and (max-width: 768px) {
+    .main-image {
+        background-attachment: scroll;
+    }
+}
+
+/* Profile section */
+.profile {
+    text-align: center;
+    margin-bottom: 53px;
+}
+
+/* Options layout */
+.options {
+    display: flex;
+    justify-content: center;
+    flex: 0 1 300px;
+    margin-top: -83px;
+}
+
+/* Individual option cards */
+.option {
+    width: 500px;
+    height: 120px;
+    background-color: var(--text-color-white);
+    margin: 17px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px #888888;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.option ion-icon {
+    border: 3px solid black;
+    height: 23px;
+    background-color: var(--text-color-white);
+    padding: 13px;
+    border-radius: 26px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.option p {
+    text-align: center;
+    padding: 3px;
+    background-color: #b24f63;
+    border-radius: 23px;
+    color: var(--text-color-white);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option p:hover {
+    background-color: #41293b;
+}
+
+/* Services header */
+.services {
+    font-size: 3rem;
+    margin: 23px 0 13px;
+    background-color: #a47f86;
+    padding: 23px 0;
+    color: var(--text-color-white);
+    text-align: center;
+}
+
+/* Article display with image */
+.article-display {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.article-img1 {
+    width: 50%;
+    background-image: url('../images/weld_clipart.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.article-display p {
+    width: 43%;
+    padding: 7px;
+    text-align: justify;
+    margin: auto;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Article banner */
+.articleBanner {
+    width: 100%;
+    height: 420px;
+    background-image: url('../images/welding.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-color-white);
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.articleBanner h1 {
+    padding-top: 153px;
+}
+
+/* Gallery section */
+.galleryHolder {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    background-color: azure;
+    margin: 0 0 23px;
+}
+
+/* Individual gallery image with hover effect */
+.gal {
+    width: 20%;
+    transition: transform 1s;
+}
+
+.gal:hover {
+    transform: scale(1.5);
+}
