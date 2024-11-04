@@ -7,7 +7,10 @@ body{
     background-color:rgb(14, 14, 12);
    
 }
-
+button{
+    border-style: none;
+    /*temp fix, buttons had a wierd border style*/
+}
 .fixed-button {
     position: fixed;
     bottom: 40px; /* Adjust this value to position the button vertically */
@@ -206,7 +209,22 @@ body{
     .navigation a:hover, .navigation a:active{
         color: #cf6076;
     }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
+    .header-text{
+        display: none;
+    }
+    #header-title{
+        font-size: 3vh;
+    }
+    .navigation .li{
+        font-size: 4vw;
+    }
+    .top_header{
+        height: 100px;
+    }
+    #stevens-logo{
+        height: 80px;
+    }
 }
 .tagline{
     background-image:  linear-gradient(rgba(0,0,0,0.7), rgb(0,0,0,0.7)), url('images/Thad.jfif');
@@ -230,7 +248,32 @@ body{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 230%;
         line-height: 200%;
+        width: 80%;
     }
+@media only screen and (max-width: 600px){
+    #tag{
+        font-size: 4vh;
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #tag{
+        font-size: 5vh;
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px){
+    #tag{
+        font-size: 6vh;
+    }
+}
+@media only screen and (max-width: 992px){
+    #tag{
+        text-align: center;
+        align-self: center;
+        margin-left: 0;
+    }
+}
 .main-content{
     background-color: rgb(14,14,12);
     height: max-content;
@@ -251,11 +294,25 @@ body{
         justify-content: center;
     }
     #sectionText{
-        color:#cf6076;
         font-size: 5vh;
         font-family: 'Ubuntu';
         font-weight: 100;
         color: white;   
+        margin-bottom: 40px;
+    }
+    @media only screen and (max-width:768px){
+        #sectionText{
+            width: 90%;
+            text-align: center;
+        }
+        #sectionText:after{
+            display:block;
+            height:2px;
+            width:100px;
+            margin: 7px auto;
+            background-color: #cf6076;
+            content:" ";
+        }
     }
     .sectionCards{
         display:flex;
@@ -306,6 +363,11 @@ body{
         margin: 40px auto;
         font-size: 5vh;
     }
+    @media only screen and (max-width: 768px) {
+        .section-header{
+            width: 70%;
+        }
+    }
     h2:after{
         display:block;
         height:2px;
@@ -345,8 +407,6 @@ body{
             transition: transform 0.5s, opacity 0.5s;
             object-fit: cover;
             overflow:hidden;
-            
-            
         }
         .template:hover{
             opacity:1;
@@ -374,6 +434,18 @@ body{
         .overflow-hidden-4x4:hover .popup {
             opacity: 1;
         }
+    
+    @media only screen and (max-width: 768px){
+        .general-templates{
+            width: 80%;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .overflow-hidden-4x4{
+            width: 100%;
+
+        }
+    }
     .majors-involved{
         display:flex;
         flex-wrap: wrap;
@@ -423,7 +495,13 @@ body{
             font-weight: bold;
             font-family: 'Ubuntu';
             background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
-        }   
+        } 
+    @media only screen and (max-width: 768px){
+        .over{
+            height: 50%;
+            width: 50%;
+        }
+    }
 .section4{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('images/Omnifood Contents/back-customers.jpg');
     display:flex;
@@ -504,7 +582,27 @@ body{
             font-size: 140%;
             margin-top: 15px;
         }
-
+    @media only screen and (max-width: 768px){
+        .testimonials{
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .testimonial-card{
+            width: 85vw;
+            margin-bottom: 90px;
+        }
+        
+        .testimonial-card:after{
+            display:block;
+            height:2px;
+            width:50vw;
+            background-color: rgb(255, 255, 255);
+            content:" ";
+            margin: auto;
+            margin-top:25px;
+        }
+    }
 .section5{
     display:flex;
     flex-direction: column;
@@ -593,6 +691,10 @@ body{
             color: maroon;
         }
         /*price card insides*/
+            .seperator-top{
+                display: flex;
+                flex-direction: column;
+            }
             .title{
                 font-size:25px;
                 font-weight:200;
@@ -605,7 +707,7 @@ body{
                 gap:10px;
             }
             .ion-ok{/*prices*/
-                font-size:100%;
+                font-size:10px;
                 display:block;
                 color:maroon;
                 margin-bottom:10px;
@@ -616,7 +718,6 @@ body{
                 flex-direction: column;
             }
             .case7{
-                font-size:28px;
                 font-weight:200;
                 font-family:"Ubuntu";
                 display:flex;
@@ -642,8 +743,63 @@ body{
                 color:maroon;
                 font-family: "Ubuntu";
                 font-weight: lighter;
-                
+                text-align: left;
             }
+            .option-fixed .text{
+                height: 10%;
+            }
+            .option .but{
+                margin-top: 2vh;
+            }
+@media only screen and (max-width: 768px){
+    .option-fixed{
+        display: none;
+    }
+    .option{
+        width: 70vw;
+    }
+    .section5{
+        height: max-content;
+    }
+    .top-spot{
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .section5{
+        height: max-content;
+    }
+    .option{
+        width: 50vw;
+        height: 60vh;
+    }
+    .option-fixed{
+        width: max-content;
+    }
+    .option .seperator-top{
+        height: 20vh;
+    }
+    .option .unlock{
+        height: 25vh;
+        justify-content: space-between;
+    }
+    .option-fixed .seperator-top{
+        height: 20vh;
+    }
+    .option-fixed .unlock{
+        height: 25vh;
+        justify-content: space-between;
+    }
+    .option-fixed .chance1{
+        font-size: 1em;
+    }
+    .option-fixed .ion-ok{
+        font-size: 30px;
+    }
+    .prices{
+        gap: 10px;
+    }
+}
 /* sign up button*/
 .signUp{
     height:40px;
@@ -765,4 +921,17 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
+}
+@media only screen and (max-width: 600px){
+    .footer-info{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .site-footer{
+        z-index: 1;
+    }
+    .fixed-button{
+        z-index: 1;
+    }
 }

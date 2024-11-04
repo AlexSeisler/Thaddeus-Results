@@ -20,9 +20,9 @@
             </div>
             <div class="right_top">
                 <div class="header-contact-box">
-                    <div class="circle1">
+                    <button onclick="initiateCall()" class="circle1">
                         <ion-icon class="tiny-icon" name="call"></ion-icon>
-                    </div>
+                    </button>
                     <button onclick="initiateCall()" class="header-text">(484) 769-4650</button>
                 </div>
                 <div class="header-contact-box">
@@ -46,21 +46,27 @@
     <div class="tagline">
         <h1 id="tag">Be your own boss <br> Make it happen, whatever it takes</h1>
     </div>
+
     <div class="popup1">
         <div class="popup-header">
             <h2 id="home">Welcome to Our Website!</h2>
-            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <span class="close-btn" onclick="closePopup()" style="display:none">&times;</span>
         </div>
         <div class="popup-content">
             <div class="form">
+                <!-- YouTube Video -->
                 <iframe id="youtube-video" width="780" height="439" 
-                src="https://www.youtube.com/embed/HtsdofJ4JS8?autoplay=1&mute=1" 
-                frameborder="0" allow="autoplay" allowfullscreen>
+                    src="https://www.youtube.com/embed/HtsdofJ4JS8?&mute=0" 
+                    frameborder="0" allow="autoplay" allowfullscreen>
                 </iframe>
-                <iframe id="microsoft-form" width="640px" height="480px" src="https://forms.office.com/r/cUuZZdH8aV?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                
+                <!-- Microsoft Form (Initially hidden) -->
+                <iframe id="microsoft-form" width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=GGz4YYMyEU6sbqzNEuEO1LE27lrdJPhIkj2MVbRW0ypUNlRURVNaQTlPTUVNNlhBRzBKS1lSM0JPMC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh; display:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
             </div>
         </div>
     </div>
+    
+
     <div class="main-content">
         <div id="transition-gradient">
         </div>
@@ -109,8 +115,8 @@
                     
                 </div>
                 <div class="overflow-hidden-4x4">
-                    <a href="Websites/Ok/templatemo_545_finance_business/index.html" target="_blank">
-                        <img class="template" src="template-images/two.png" alt="Template Two">
+                    <a href="Template-Alex/Template-Alex.html" target="_blank">
+                        <img class="template" src="Contracting/Profile2.jpg" alt="Template Two">
                         <div class="popup"><h3>View Website</h3></div>
                     </a>
                 </div>
@@ -197,13 +203,16 @@
         <div class="prices">
             <div class="option option-fixed">
                 <span class="hover-message">Not available yet</span>
-                <h5 class="title">PREMIUM</h5>
-                <div class="top-spot">
-                    <p class="price">$100 + $100 </p>
-                    <p class="month">/month</p>
+                <div class="seperator-top">
+                    <h5 class="title">PREMIUM</h5>
+                    <div class="top-spot">
+                        <p class="price">$100 + $100 </p>
+                        <p class="month">/month</p>
+                    </div>
+                    <p class="text">For the go getters</p>
+                    <br>
+                    <hr id="line">
                 </div>
-                <p class="text">For the go getters</p>
-                <hr id="line">
                 <div class="unlock">
                     <div class="case7">
                         <ion-icon class="ion-ok" name="checkmark"></ion-icon>
@@ -229,14 +238,15 @@
                 </div>
             </div>
             <div class="option">
-                <h5 class="title">STARTER</h5>
-                <div class="top-spot">
-                    <p class="price">$100 </p>
-                    <p class="month">/website</p>
+                <div class="seperator-top">
+                    <h5 class="title">STARTER</h5>
+                    <div class="top-spot">
+                        <p class="price">$100 </p>
+                        <p class="month">/website</p>
+                    </div>
+                    <br>
+                    <hr>
                 </div>
-                <p id="space">  </p>
-                <br>
-                <hr>
                 <div class="unlock">
                     <div class="case7">
                         <ion-icon class="ion-ok" name="checkmark"></ion-icon>
@@ -258,20 +268,22 @@
                 </div>
                 <hr>
                 <br>
-                <div class="button">
+                <div class="but">
                     <button class="signUp">Sign up now</button>
                 </div>
             </div>
             <div class="option option-fixed">
                 <span class="hover-message">Not available yet</span>
-                <h5 class="title">PRO</h5>
-                <div class="top-spot">
-                    <p class="price">$100 + $50 </p>
-                    <p class="month">/month</p>
+                <div class="seperator-top">
+                    <h5 class="title">PRO</h5>
+                    <div class="top-spot">
+                        <p class="price">$100 + $50 </p>
+                        <p class="month">/month</p>
+                    </div>
+                    <p class="text">For those who don't believe in themselves</p>
+                    <br>
+                    <hr>
                 </div>
-                <p class="text">For those who don't believe in themselves</p>
-                <hr>
-                <br>
                 <div class="unlock">
                     <div class="case7">
                         <ion-icon class="ion-ok" name="checkmark"></ion-icon>
