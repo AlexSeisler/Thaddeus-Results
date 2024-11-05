@@ -11,9 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000); 
 
         setTimeout(() => {
-            document.getElementById('youtube-video').style.height = "35vh";
-            document.getElementById('microsoft-form').style.height = "65vh";
-            document.getElementById('microsoft-form').style.width = "640px";
+            if (/Mobi|Android/i.test(navigator.userAgent)) {
+                // Mobile device
+
+            }
+            else
+            {
+                document.getElementById('youtube-video').style.height = "35vh";
+                document.getElementById('microsoft-form').style.height = "65vh";
+                document.getElementById('microsoft-form').style.width = "640px";
+            }
+            
             
         }, 5000); 
     }
@@ -21,9 +29,21 @@ document.addEventListener('DOMContentLoaded', function() {
     showPopup();
 
 });
+var count = 0
 function closePopup() 
 {
-    document.querySelector('.popup1').style.display = 'none';
+    
+    if (/Mobi|Android/i.test(navigator.userAgent) && count == 0) {
+        // Mobile device
+        document.getElementById('youtube-video').style.display = "none";
+        document.getElementById('microsoft-form').style.height = "100vh";
+        document.getElementById('microsoft-form').style.width = "640px";
+        count++;
+    }
+    else
+    {
+        document.querySelector('.popup1').style.display = 'none';
+    }
 }
 
 function initiateCall() {
