@@ -544,3 +544,13 @@ a:active{
     color: inherit;
     text-decoration: inherit;
 }
+
+/*carousel gallery*/
+.carousel-gallery{
+    width: 80%;
+}  
+@media only screen and (max-width: 992px){
+    .carousel-gallery{
+        width: 90%;
+    }
+}
