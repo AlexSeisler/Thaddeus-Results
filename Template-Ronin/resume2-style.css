@@ -17,6 +17,12 @@ body{
     z-index: -999;
     position: fixed;
 }
+@media only screen and (max-width: 500px){
+    .background-gradient{
+        width: 500px;
+        background-position: center;
+    }
+}
 .background-image{
     background-image: url(./images/botwcut.png);
     background-repeat: no-repeat;
@@ -64,7 +70,83 @@ body{
         left: 30px;
         transition: all 0.4s ease-in-out;
     }
-        
+    @keyframes fadeOutMenu{
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+            display: none;
+        }
+    }
+    
+    @keyframes fadeInMenu{
+        0%{
+            opacity: 0;
+            display: inline-block;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes delayFlexDirectionColNav{
+        0% {
+            display: none;
+            opacity: 0;
+        }
+        15%{
+            display: flex;
+            opacity: 0;
+            flex-direction: column;
+        }
+        50%{
+            opacity: 0;
+            scale: 0.5;
+        }
+        100%{
+            flex-direction: column;
+            opacity: 1;
+            scale: 1.5;
+        }
+    }
+    @keyframes delayFlexDirectionCol{
+        0% {
+            flex-direction: row;
+        }
+        15%{
+            scale: 0.2;
+            opacity: 0;
+        }
+        50%{
+            flex-direction: column;
+            opacity: 0;
+            scale: 0.5;
+        }
+        100%{
+            flex-direction: column;
+            opacity: 1;
+            scale: 1.0;
+        }
+    }
+    @keyframes delayFlexDirectionRow{
+        0% {
+            flex-direction: column;
+        }
+        25%{
+            scale: 0.5;
+            opacity: 0;
+        }
+        50%{
+            flex-direction: row;
+            opacity: 0;
+            scale: 0.5;
+        }
+        100%{
+            flex-direction: row;
+            opacity: 1;
+            scale: 1.0;
+        }
+    }
     .avatar{
         height: inherit;
         display: flex;
@@ -85,6 +167,7 @@ body{
         scale: 0.8;
         border-radius: 40px;
         margin: 0px 10px 0px 0px;
+        transition: all 0.2s ease;
     }
     .nav{
         text-transform: uppercase;
@@ -114,29 +197,59 @@ body{
         &:hover{
             height: 50vh;
             .nav{
-                flex-direction: column;
+                animation-name: delayFlexDirectionColNav;
+                animation-duration: 0.8s;
+                animation-fill-mode: forwards;
+                align-items: flex-start;
+                right: 0;
+                margin-right: 0;
             }
             #menu-button{
-                display: none;
+                animation-name: fadeOutMenu;
+                animation-duration: 0.4s;
+                animation-fill-mode: forwards;
             }
             .nav-item{
                 display: inline-block;
+                margin-right: 0;
             }
             .avatar{
-                flex-direction: column;
+                animation-name: delayFlexDirectionCol;
+                animation-duration: 0.8s;
+                animation-fill-mode: forwards;
+                align-items: flex-start;
+            }
+            .avatar img{
+                scale: 1.6;
+                position: relative;
+                top: -5vh;
+                left: 1vw;    
             }
         }
     }
+    .avatar{
+        animation-name: delayFlexDirectionRow;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
     .nav{
         scale: 0.6;
-        right:1vw;
+        right: 1vw;
     }
     #menu-button{
         display: inline-block;
+        animation-name: fadeInMenu;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
         font-size: 9vh;
     }
     .nav .nav-item{
         display: none;
+    }
+    .footer .nav a .nav-item{
+        display: inline-block;
+        scale: 1.5;
     }
 }
 /*intro*/
@@ -173,9 +286,23 @@ body{
         /*scale: 1.2;*/
         transform: translatey(-3px);
     }
+@media only screen and (max-width: 1200px){
+    .intro{
+        :not(a){
+            text-align: left;
+            justify-self: flex-start;
+            align-self: flex-start;
+        }
+    }
+}
 @media only screen and (max-width: 992px){
     .intro{
         font-size: 3vh;
+    }
+}
+@media only screen and (max-width: 600px){
+    .intro{
+        font-size: 2vh;
     }
 }
 /*about*/
@@ -304,7 +431,7 @@ body{
     }
     .project-content img{
         height: 300px;
-        width: 500px;
+        width: 95%;
         object-fit: cover;
         scale: 1.0;
         border-radius: 20px;
@@ -399,6 +526,7 @@ body{
 }
 .footer .nav{
     margin-right: 50px;
+    scale: 1.2;
 }
 a:link{
     color: inherit;
@@ -415,4 +543,14 @@ a:hover{
 a:active{
     color: inherit;
     text-decoration: inherit;
+}
+
+/*carousel gallery*/
+.carousel-gallery{
+    width: 80%;
+}  
+@media only screen and (max-width: 992px){
+    .carousel-gallery{
+        width: 90%;
+    }
 }
