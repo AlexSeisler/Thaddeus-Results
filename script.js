@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000); 
 
         setTimeout(() => {
-            document.getElementById('microsoft-form').style.height = "480px";
+            document.getElementById('youtube-video').style.height = "35vh";
+            document.getElementById('microsoft-form').style.height = "65vh";
             document.getElementById('microsoft-form').style.width = "640px";
             
-        }, 1000); 
+        }, 5000); 
     }
 
     showPopup();
