@@ -70,11 +70,14 @@ button{
     .popup-content {
         margin-top: 10px;
     }
-
+    .microsoft-form{
+        transition: all 1.0s ease-in-out;
+    }
 @media (max-width: 768px){
     .popup1{
         width: 80%;
         overflow: hidden;
+        height:90%;
     }
     .close-btn{
         scale: 200%;
@@ -83,12 +86,17 @@ button{
         flex-direction: column;
     }
     #youtube-video{
-        height: 40vh;
+        height: 100vh;
     }
     #microsoft-form{
-        height: 20vh;
+        height: 25vh;
 
     }
+    #scroll-container {
+        width: 100%;         /* Full width for mobile */
+        height: 100vh;       /* Full height of the viewport */
+        overflow: auto;      /* Enables scrolling if content overflows */
+      }
 
 }
 
