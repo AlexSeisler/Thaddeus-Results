@@ -107,6 +107,7 @@ button{
     }
     #youtube-video{
         height: 75vh;
+        overflow:hidden;
     }
     #microsoft-form{
 
