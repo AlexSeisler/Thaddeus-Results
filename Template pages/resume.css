@@ -47,7 +47,7 @@ body{
 @media screen and (min-width: 500px){
     .left{
         width: 120px;
-        background-color: red;
+      
     }
 }
 
@@ -56,7 +56,7 @@ body{
     width: 240px;
     height: 100vh;
     text-align: center;
-    background-color: rgb(14, 14,12);
+    background-color: hsl(340, 64%, 33%);
     padding-right: 9px;
 }
 
@@ -72,7 +72,7 @@ body{
   }
 
 .slideShowHolder{ 
-    border: 1px rgb(83, 58, 58) solid;
+    /* border: 1px rgb(83, 58, 58) solid; */
     width: 100%;
     height: fit-content;
     margin: 3px auto  23px auto; 
@@ -233,17 +233,17 @@ ion-icon{
 .services{
     font-size: 300%;
     margin: 23px 0px 13px 0px;
-    background-color: #a47f86;
+    background-color: #fcb900;
     padding: 23px 0px 23px 0px;
-    color: white;
+    color: black;
 }
 
 .services-1{
     font-size: 300%;
     margin: 0px 0px 13px 0px;
-    background-color: #a47f86;
+    background-color: #fcb900;
     padding: 23px 0px 23px 0px;
-    color: white;
+    color: black;
 }
 
 .article-display{
@@ -265,11 +265,12 @@ ion-icon{
     width: 43%;
     height: fit-content;
     padding: 7px;
-    text-align: justify;
+    text-align: left;
     margin: auto;
-    font-size: 130%;
+    font-size: 180%;
     border-radius: 12px;
     overflow: hidden;
+    font-size: 120%;
 }
 
 .articleBanner{
@@ -434,4 +435,67 @@ ion-icon{
     .gal:hover{
         width: 100%;
     }
+
+    .article-display li{
+        font-size: 23px;
+    }
+}
+
+.article-displaySkill{
+    display: flex;
+    flex-direction: column;
+    font-size: 170%;
+    text-align: left;
+    /* border: red 1px solid; */
+    margin: auto;
+    height: fit-content;
+}
+
+.article-display li{
+    margin: 3px;
+}
+
+.certs{
+    display: flex;
+    height: fit-content;
+}
+
+.certIMG{
+    width: 50%;
+    background-image: url('../images/weld_thadd.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.certLi{
+  
+    width: 50%;
+}
+
+.certs ul{
+    font-size: 190%;
+    margin: 3px;
+    justify-content: space-evenly;
+}
+
+.ref{
+    width: 440px;
+    height: 300px;
+    background-color: rgb(24, 22, 22);
+    margin: 7px;
+    border-radius: 13px;
+}
+
+.refTop{
+    display: flex;
+}
+
+.refIMG{
+    width: 123px;
+    height: 123px;
+    background-color: white;
+    border-radius: 63px;
+    margin: 13px;
+    background-image: url('../images/profile_pic_red.jpg');
 }
