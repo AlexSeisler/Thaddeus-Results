@@ -309,7 +309,7 @@ ion-icon{
 }
 
 .gal1{
-    background-image: url('../images/weld_gal1.webp');
+    background-image: url('images/project1\(kaleb\).jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -317,28 +317,28 @@ ion-icon{
 }
 
 .gal2{
-    background-image: url('../images/weld_gal2.jpg');
+    background-image: url('images/project2\(kaleb\).jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .gal3{
-    background-image: url('../images/weld_gal3.jpg');
+    background-image: url('images/project3\(kaleb\).jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .gal4{
-    background-image: url('../images/weld_gal4.jpg');
+    background-image: url('images/project4\(kaleb\).jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .gal5{
-    background-image: url('../images/weld_gal5.jpg');
+    background-image: url('images/project5\(kaleb\).jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

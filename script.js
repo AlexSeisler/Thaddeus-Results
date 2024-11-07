@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show the close button after time
         setTimeout(() => {
             document.querySelector('.close-btn').style.display = 'block';
-        }, 5000); 
+        }, 1000); 
 
         setTimeout(() => {
             if (/Mobi|Android/i.test(navigator.userAgent)) {
