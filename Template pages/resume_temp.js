@@ -12,14 +12,14 @@ function showSlides() {
     }
     slideIndex++;
 
-        //loop back to first slide 
+       
     if (slideIndex > slides.length) { slideIndex = 1}
 
-    //show the current slide with a fade in effect
+   
     slides[slideIndex-1].style.display = 'block';
     slides[slideIndex -1].style.opacity = '1';
 
-    //change slides every 5 seconds
+   
     setTimeout(showSlides, 5000);
    
 }
