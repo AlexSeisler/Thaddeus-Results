@@ -11,21 +11,43 @@ button{
     border-style: none;
     /*temp fix, buttons had a wierd border style*/
 }
-.fixed-button {
+.fixed-buttons {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
     position: fixed;
     bottom: 40px; /* Adjust this value to position the button vertically */
     left: 40px;  /* Adjust this value to position the button horizontally */
     padding: 10px 20px;
-    background-color: maroon;
+    background-color: rgb(224, 224, 224);
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     height:70px;
     width:250px;
-    font-size:20px;
-    font-family: "Ubuntu";
+    
     z-index: 1;
+}
+.fixed-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height:40px;
+    width:200px;
+    font-size:15px;
+    font-family: "Ubuntu";
+    color:white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 8px;
+}
+#group{
+    background-color: #2156fc;
+}
+#dis{
+    background-color: #5865f2;
 }
 @media only screen and (max-width: 768px){
     .fixed-button{
@@ -52,7 +74,7 @@ button{
         display:flex;
         justify-content: center;
         align-items: center;
-        gap:50px;
+        gap:25px;
 
     }
     .popup-header {
@@ -73,6 +95,11 @@ button{
     .microsoft-form{
         transition: all 1.0s ease-in-out;
     }
+    .youtube-video
+    {
+        height:100vh;
+        width:100vw;
+    }
 @media (max-width: 768px){
     .popup1{
         width: 80%;
@@ -83,13 +110,13 @@ button{
         scale: 200%;
     }
     .form{
-        flex-direction: column;
+        overflow:hidden;
     }
     #youtube-video{
-        height: 100vh;
+        height: 75vh;
+        overflow:hidden;
     }
     #microsoft-form{
-        height: 25vh;
 
     }
     #scroll-container {

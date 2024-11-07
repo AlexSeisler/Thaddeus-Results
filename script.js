@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show the close button after time
         setTimeout(() => {
             document.querySelector('.close-btn').style.display = 'block';
-        }, 5000); 
+        }, 1000); 
 
         setTimeout(() => {
             if (/Mobi|Android/i.test(navigator.userAgent)) {
@@ -23,21 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             
-        }, 5000); 
+        }, 30000); 
     }
 
     showPopup();
 
 });
-var count = 0
+var count = 0;
 function closePopup() 
 {
     
     if (/Mobi|Android/i.test(navigator.userAgent) && count == 0) {
         // Mobile device
         document.getElementById('youtube-video').style.display = "none";
-        document.getElementById('microsoft-form').style.height = "100vh";
-        document.getElementById('microsoft-form').style.width = "640px";
+        document.getElementById('microsoft-form').style.height = "90vh";
+        document.getElementById('microsoft-form').style.width = "100vw";
         count++;
     }
     else
@@ -55,3 +55,4 @@ function initiateCall() {
         window.location.href = "https://teams.microsoft.com/l/meetup-join/273183261025";
     }
 }
+
