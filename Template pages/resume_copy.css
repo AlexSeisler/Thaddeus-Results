@@ -58,7 +58,7 @@ body{
     align-items: center;
     justify-content: space-around;
     color: white;
-    width: 240px;
+    width: 20vw;
     height: 100vh;
     text-align: center;
     background-color: hsl(340, 68%, 39%);
@@ -92,8 +92,8 @@ body{
 }
 
 .myslide img{
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     object-fit: cover;
     border-radius: 10vw;
 }
@@ -115,6 +115,7 @@ body{
 
 .left-footer{
     display: flex;
+    overflow: hidden;
     flex-direction: column;
 }
 .contact{
@@ -464,6 +465,10 @@ ion-icon{
     gap: 2vw;
     padding: 2vw;
     li{
+        width: 20%;
+        border: 3px solid darkgray;
+        border-radius: 1vw;
+        padding: 2vw;
         font-family:'Times New Roman', Times, serif;
         font-style: italic;
         strong{
