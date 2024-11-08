@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             
-        }, 90000); 
+        }, 110000); 
     }
 
     showPopup();
