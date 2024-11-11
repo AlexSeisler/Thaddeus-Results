@@ -170,7 +170,7 @@ button{
         --ionicon-stroke-width:20px;
     }
     .header-text{
-        color:#b24f63;
+        color:#16498b;;
         font-size:25px;
         background-color:black;
         cursor:pointer;
@@ -218,7 +218,7 @@ button{
     .circle1{
         height:40px;
         width:40px;
-        background-color: #b24f63;
+        background-color: #16498b;;
         border-radius: 25px;
         display:flex;
         justify-content: center;
@@ -238,11 +238,11 @@ button{
         
     }
     .navigation .li{
-        color:#861E42;
+        color:#16498b;;
         text-decoration:none;
     }
     .navigation a:hover, .navigation a:active{
-        color: #cf6076;
+        color: #16498b;;
     }
 @media only screen and (max-width: 768px){
     .header-text{
@@ -346,7 +346,7 @@ button{
             height:2px;
             width:100px;
             margin: 7px auto;
-            background-color: #cf6076;
+            background-color: #16498b;;
             content:" ";
         }
     }
@@ -378,7 +378,7 @@ button{
         }
         .quality{
             text-align: center;
-            color:#cf6076;
+            color:#16498b;;
             font-family: 'Ubuntu';
         }
         .card .info{
@@ -393,7 +393,7 @@ button{
 }
 /* example content section */
     .section-header{
-        color: #cf6076;
+        color: #16498b;;
         font-family: 'Ubuntu';
         text-align: center;
         margin: 40px auto;
@@ -409,7 +409,7 @@ button{
         height:2px;
         width:100px;
         margin: 10px auto;
-        background-color: #cf6076;
+        background-color: #16498b;;
         content:" ";
     }
     .area{
@@ -454,7 +454,7 @@ button{
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(128, 0, 0, 1);
+            background-color: #16498b;;
             color: white;
             padding: 10px;
             border-radius: 5px;
@@ -566,7 +566,7 @@ button{
         display:block;
         height:2px;
         width:100px;
-        background-color: maroon;
+        background-color: #16498b;;
         content:" ";
         margin: auto;
         margin-top:25px;
@@ -670,7 +670,7 @@ button{
         display:block;
         height:2px;
         width:150px;
-        background-color: maroon;
+        background-color: #16498b;;
         content:" ";
         margin: auto;
         margin-top:10px;
@@ -733,7 +733,7 @@ button{
         }
 
         .option .title5{
-            color: maroon;
+            color: #16498b;
         }
         /*price card insides*/
             .seperator-top{
@@ -754,7 +754,7 @@ button{
             .ion-ok{/*prices*/
                 font-size:10px;
                 display:block;
-                color:maroon;
+                color:#16498b;
                 margin-bottom:10px;
                 --ionicon-stroke-width:20px;
             }
@@ -775,17 +775,17 @@ button{
                 font-weight:100;
                 margin:0px;
                 font-family: "Ubuntu";
-                color:maroon;
+                color:#16498b;
             }
             .month{
                 font-size:100%;
                 font-weight:300;
-                color:maroon;
+                color:#16498b;
             }
             .chance1{
                 font-size:2vh;
                 margin:10px;
-                color:maroon;
+                color:#16498b;
                 font-family: "Ubuntu";
                 font-weight: lighter;
                 text-align: left;
@@ -850,35 +850,35 @@ button{
     height:40px;
     width:180px;
     border-radius:20px;
-    outline:maroon solid 2px;
+    outline:#16498b solid 2px;
     border:none;
     font-size:20px;
     font-family:"Ubuntu";
     font-weight:100;
-    color:maroon;
+    color:#16498b;
     background-color:white;
 }
 .signUp:hover{
-    background-color: maroon;
+    background-color: #16498b;
     color:white;
 }
 .signUp-fixed{
     height:40px;
     width:180px;
     border-radius:20px;
-    outline:maroon solid 2px;
+    outline:#16498b solid 2px;
     border:none;
     font-size:20px;
     font-family:"Ubuntu";
     font-weight:100;
-    color:maroon;
+    color:#16498b;
     background-color:white;
 }
 .button{
     text-align: center;
 }
 .ion-ok{
-    color:maroon;
+    color:#16498b;
     font-size:30px;
     display:flex;
 }
